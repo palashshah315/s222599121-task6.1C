@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Code Analysis') {
             steps {
-                echo '--- Performing code analysis ---'
+                echo '--- Performing code analysis with jenkins ---'
                 echo 'Performing code analysis...'
             }
         }
