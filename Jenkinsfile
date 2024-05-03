@@ -14,7 +14,7 @@ pipeline {
             }
             post {
                 success {
-                    echo '--- Tests Succeeded ---'
+                    echo '--- Tests Succeeded with jenkins---'
                     emailext subject: 'Tests Completed - Success',
                              body: 'Unit and integration tests have completed successfully.\n\n${BUILD_LOG, maxLines=1000}',
                              to: 'palashshah345@gmail.com',
